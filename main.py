@@ -3,7 +3,7 @@ import requests
 from datetime import datetime
 
 app = Flask(__name__)
-file_url = 'https://joshuaadeniji.pythonanywhere.com/api/?slack_name=Joshua%20Adeniji&track=backend/'
+file_url = 'https://joshuaadeniji.pythonanywhere.com/api/?slack_name=Josh&track=backend/'
 response = requests.get(file_url)
 today = datetime.now()
 
@@ -11,7 +11,7 @@ today = datetime.now()
 
 def user_page():
 
-    slack_name = str(request.args.get('slack_name'))  # slack_name=Joshua Adeniji
+    slack_name = str(request.args.get('slack_name'))  # slack_name=Josh
     track = str(request.args.get('track'))  # track=backend
 
     data_set = {"slack_name": f"{slack_name}",
