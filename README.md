@@ -16,5 +16,5 @@ The GitHub URL of the full source code.
 A Status Code of Success
 
 ## Response
-I used Python to create the API and endpoints and hosted it on _pythonanywhere.com_
-The API can be accessed here: https://joshuaadeniji.pythonanywhere.com/user/?user=Joshua%20Adeniji&track=backend
+I used Python Flask to create the API and endpoints and hosted it on _pythonanywhere.com_
+The API can be accessed here: https://joshuaadeniji.pythonanywhere.com/api?user=Josh&track=backend
