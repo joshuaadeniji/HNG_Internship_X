@@ -3,11 +3,12 @@ import requests
 from datetime import datetime
 
 app = Flask(__name__)
-file_url = 'https://joshuaadeniji.pythonanywhere.com/api/?slack_name=Josh&track=backend/'
+
+file_url = 'https://joshuaadeniji.pythonanywhere.com/api?slack_name=Josh&track=backend/'
 response = requests.get(file_url)
 today = datetime.now()
 
-@app.route('/api/', methods=['GET'])
+@app.route('/api', methods=['GET'])
 
 def user_page():
 
@@ -27,4 +28,4 @@ def user_page():
     return json_dump
 
 if __name__ == '__main__':
-    app.run(port=7000)
+    app.run(port=7070)
